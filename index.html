@@ -11,7 +11,10 @@
 <body>
 
 <header>
-    <h1>どのポケモンを さがす？</h1>
+    <div>
+        <h1>どのポケモンを さがす？</h1>
+        <button class="info-icon" onclick="openAboutModal()">？</button>
+    </div>
     <div class="type-container" id="typeButtons">
         <button class="type-btn all" onclick="filterByType('all')">ぜんぶ</button>
     </div>
@@ -42,6 +45,24 @@
     </div>
     
     <button onclick="closeModal()" class="btn-close">× とじる</button>
+</div>
+
+<div id="aboutOverlay" class="modal-overlay" onclick="closeAboutModal()"></div>
+<div id="aboutModal" class="modal">
+    <h2 class="about-modal-name">「アニポケしらべ隊」とは？</h2>
+    <div class="about-content">
+        <p>君の好きなポケモンが どのアニメにでてきたか すぐに しらべられる 図鑑（ずかん）です！</p>
+
+        <div style="background-color: #f3f3f3; border-radius: 15px; padding: 15px; margin: 20px 0; text-align: left;">
+            <p><strong>🔍 つかいかた</strong></p>
+            <ul>
+                <li>気になるポケモンの カードを おす</li>
+                <li><strong>「しらべるボタン」</strong>を おす</li>
+                <li>その子が かつやくした お話（はなし）が 見つかるよ！</li>
+            </ul>
+        </div>
+    </div>
+    <button onclick="closeAboutModal()" class="btn-close">× とじる</button>
 </div>
 
 <script src="data/gen1.js"></script>

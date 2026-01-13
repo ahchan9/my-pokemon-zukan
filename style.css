@@ -252,3 +252,66 @@ h1 { font-size: 1.2rem; margin: 5px 0; color: #1976d2; }
     font-weight: bold;
     box-shadow: inset 0 2px 4px rgba(0,0,0,0.05);
 }
+
+/* タイトルの横のはてなボタン */
+.info-icon {
+	position: absolute;
+	top: 15px;
+    right: 20px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    background: #ffffff;
+	border: 2px solid #cbcbcb;
+    color: #cbcbcb;
+    border-radius: 50%;
+    width: 28px;
+    height: 28px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    vertical-align: middle;
+    margin-left: 8px;
+}
+
+/* 説明文の中身 */
+.about-content {
+	font-size: 1.1rem;
+    line-height: 1.6;
+    color: #444;
+    padding: 10px;
+}
+
+.about-modal-name {
+	font-size: 1.6rem;
+}
+
+.about-content ul {
+	list-style-type: decimal;
+}
+
+.about-content p {
+	padding-left: 20px;
+}
+
+/* 既存のオーバーレイと共通のスタイルにするために調整（必要に応じて） */
+#aboutOverlay {
+    display: none;
+    position: fixed;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background: rgba(0,0,0,0.5);
+    z-index: 200;
+}
+
+#aboutModal {
+    display: none;
+    position: fixed;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 20px;
+    border-radius: 20px;
+    width: 85%;
+    max-width: 420px;
+    z-index: 201;
+    text-align: center;
+}

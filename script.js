@@ -149,4 +149,14 @@ function closeModal() {
     document.getElementById('overlay').style.display = 'none';
 }
 
+function openAboutModal() {
+    document.getElementById('aboutModal').style.display = 'block';
+    document.getElementById('aboutOverlay').style.display = 'block';
+}
+
+function closeAboutModal() {
+    document.getElementById('aboutModal').style.display = 'none';
+    document.getElementById('aboutOverlay').style.display = 'none';
+}
+
 init();

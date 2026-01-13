@@ -224,3 +224,31 @@ h1 { font-size: 1.2rem; margin: 5px 0; color: #1976d2; }
 .btn-google { background: #4285F4;}
 .btn-close { border: none; background: none; color: #999; font-size: 1.2rem; cursor: pointer; margin-top: 20px; }
 
+/* ソートボタンのスタイル */
+.sort-container {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 10px 0;
+    padding: 5px;
+}
+
+.sort-btn {
+    background: white;
+    border: 1px solid #ddd;
+    padding: 6px 15px;
+    border-radius: 20px;
+    font-size: 13px;
+    color: #666;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+/* 選択されているボタンの見た目 */
+.sort-btn.active {
+    background: #f0f0f0;
+    border-color: #999;
+    color: #333;
+    font-weight: bold;
+    box-shadow: inset 0 2px 4px rgba(0,0,0,0.05);
+}

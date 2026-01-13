@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>アニポケしらべ隊</title>
+    <link rel="icon" href="favicon.png" type="image/png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>どのポケモンを さがす？</h1>
+    <div class="type-container" id="typeButtons">
+        <button class="type-btn all" onclick="filterByType('all')">ぜんぶ</button>
+    </div>
+    <input type="text" id="searchInput" class="search-box" placeholder="なまえを いれてね" oninput="searchName()">
+</header>
+
+<main class="pokemon-container" id="pokemonList">
+    </main>
+
+<div id="overlay" onclick="closeModal()"></div>
+
+<div id="modal">
+    <h2 id="modalName" class="modal-name"></h2>
+    <p id="modalInfo" class="modal-info"></p>
+    <div id="modalTypes" class="modal-type-area"></div>
+    
+    <img id="modalImg" src="">
+    
+    <div class="modal-links">
+        <a id="wikiLink" class="btn btn-wiki" target="_blank">📖 ポケモンWikiでしらべる</a>
+        <a id="googleLink" class="btn btn-google" target="_blank">🔍 Googleでしらべる</a>
+        <a id="youtubeLink" class="btn btn-youtube" target="_blank">▶️ YouTubeでみる</a>
+    </div>
+    
+    <button onclick="closeModal()" class="btn-close">× とじる</button>
+</div>
+
+<script src="data/gen1.js"></script>
+<script src="data/gen2.js"></script>
+<script src="data/gen3.js"></script>
+<script src="data/gen4.js"></script>
+<script src="data/gen5.js"></script>
+<script src="data/gen6.js"></script>
+<script src="data/gen7.js"></script>
+<script src="data/gen8.js"></script>
+<script src="data/gen9.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
